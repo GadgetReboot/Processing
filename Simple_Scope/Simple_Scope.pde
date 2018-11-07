@@ -1,7 +1,10 @@
-// Pro_Graph2.pde
+
 /*
- Used in the Youtube video "Arduino and Processing ( Graph Example )"
- Based in the Tom Igoe example.
+Hacked together by Gadget Reboot 2018 from two separate sources:
+https://arduining.com/2013/08/05/arduino-and-processing-graph-example/
+https://forum.processing.org/two/discussion/14060/#Comment_57867
+
+ Based on the Tom Igoe example.
  Mofified by Arduining 17 Mar 2012:
   -A wider line was used. strokeWeight(4);
   -Continuous line instead of vertical lines.
@@ -32,7 +35,7 @@ void setup () {
   // set the window size:
   size(600, 400);        
 
-  myPort = new Serial(this, "/dev/cu.wchusbserialfa1350", 9600);  //
+  myPort = new Serial(this, "ENTER_YOUR_COM_PORT_NAME_HERE!!!!!", 9600);  
 
   // A serialEvent() is generated when a newline character is received :
   myPort.bufferUntil('\n');
